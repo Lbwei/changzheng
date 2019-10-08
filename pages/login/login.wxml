@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<view class="authorize">
+  <!-- 头像 -->
+  <open-data class="avatar" type="userAvatarUrl"></open-data>
+
+  <!-- 分割线 -->
+  <view class="line"></view>
+
+  <!-- 描述 -->
+  <view class="content">该小程序为再走长征路,请求提供以下授权,即可继续操作</view>
+
+  <!-- 公开信息 -->
+  <view class="desp">
+    <text class="dot"></text>
+    <text>获取你的公开信息(昵称、头像等信息)</text>
+  </view>
+
+  <!-- 授权登录按钮 -->
+  <button class="btn" 
+          hover-class="hover-class-style"
+          open-type="getUserInfo"
+          bindgetuserinfo="authorizeClick"
+          type="primary"
+          >确认授权</button>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/startover/startover.wxml-->
+<view class="container">
+  <image src="{{bg}}"></image>
+  <view class="btn-view" bindtap="jumpClick">
+    <image src="{{jump}}"></image>
+  </view>
+</view>

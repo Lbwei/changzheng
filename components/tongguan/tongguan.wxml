@@ -1,0 +1,9 @@
+<!--components/tongguan.wxml-->
+<view class="tongguan" wx:if="{{isShowMask}}">
+  <view class="game-explaine">
+    <image src="{{gameExplain}}"></image>
+    <image bindtap="closeMask" class="close" src="{{closeIcon}}" wx:if="{{cang}}"></image>
+    <view class="gamebtn" bindtap='{{tap}}'><image src="{{gamebtn}}"></image></view>
+    <button class='yinxing' wx:if="{{yinxing}}"  open-type='share'></button>
+  </view>
+</view>

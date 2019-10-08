@@ -1,0 +1,90 @@
+<view class="container">
+  <view class="bg">
+    <image src="{{images.bg}}"></image>
+  </view>
+  <view class="header">
+    <view class="info">
+      <view class="user-info">
+        <open-data type="userAvatarUrl" class="user-image"></open-data>
+        <view class="user-name">
+          <open-data class="nick-name" type="userNickName"></open-data>
+        </view>
+        <view class="pass-title">
+          <text>{{chapter}}</text>
+        </view>
+        <view class="sub-ttile">
+          <text class="subject-number">0{{index+1}}</text>
+          <text class="counter">/05</text>
+        </view>
+      </view>
+      <view class="pass-detail">
+        <image src="{{images.passDetail}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="subject-panel">
+      <view class="time">
+        <view class="count">
+          <text>{{counter}}</text>
+        </view>
+      </view>
+      <view class="title">
+        <text>{{obj[index].question}}</text>
+      </view>
+      <!--无图-->
+      <view class="options" wx:if="{{!obj[index].img}}">
+        <view class="option {{option1}}" bindtap='option1Click' data-text="{{obj[index].a}}" style="pointer-events: {{disable}}">
+          <text>{{obj[index].a}}</text>
+          <image class="icon dui" wx:if="{{dui1}}" src="{{images.dui}}"></image>
+          <image class="icon cuo" wx:if="{{cuo1}}" src="{{images.cuo}}"></image>
+        </view>
+        <view class="option {{option2}}" bindtap='option2Click' data-text="{{obj[index].b}}" style="pointer-events: {{disable}}">
+          <text>{{obj[index].b}}</text>
+          <image class="icon dui" wx:if="{{dui2}}" src="{{images.dui}}"></image>
+          <image class="icon cuo" wx:if="{{cuo2}}" src="{{images.cuo}}"></image>
+        </view>
+        <view class="option {{option3}}" bindtap='option3Click' data-text="{{obj[index].c}}" style="pointer-events: {{disable}}">
+          <text>{{obj[index].c}}</text>
+          <image class="icon dui" wx:if="{{dui3}}" src="{{images.dui}}"></image>
+          <image class="icon cuo" wx:if="{{cuo3}}" src="{{images.cuo}}"></image>
+        </view>
+        <view class="option {{option4}}" bindtap='option4Click' data-text="{{obj[index].d}}" style="pointer-events: {{disable}}">
+          <text>{{obj[index].d}}</text>
+          <image class="icon dui" wx:if="{{dui4}}" src="{{images.dui}}"></image>
+          <image class="icon cuo" wx:if="{{cuo4}}" src="{{images.cuo}}"></image>
+        </view>
+      </view>
+      <!--有图-->
+      <!-- <view class="optionsb" wx:if="{{obj[index].img}}">
+        <view class='optionb_img'>
+          <image src="{{url}}{{obj[index].img}}"></image>
+        </view>
+        <view class="optionb {{option1}} optionb1" bindtap='option1Click' data-text="{{obj[index].a}}" style="pointer-events: {{disable}}">
+          <text>{{obj[index].a}}</text>
+          <image class="icon dui" wx:if="{{dui1}}" src="{{images.dui}}"></image>
+          <image class="icon cuo" wx:if="{{cuo1}}" src="{{images.cuo}}"></image>
+        </view>
+        <view class="optionb {{option2}} optionb2" bindtap='option2Click' data-text="{{obj[index].b}}" style="pointer-events: {{disable}}">
+          <text>{{obj[index].b}}</text>
+          <image class="icon dui" wx:if="{{dui2}}" src="{{images.dui}}"></image>
+          <image class="icon cuo" wx:if="{{cuo2}}" src="{{images.cuo}}"></image>
+        </view>
+        <view class="optionb {{option3}} optionb3" bindtap='option3Click' data-text="{{obj[index].c}}" style="pointer-events: {{disable}}">
+          <text>{{obj[index].c}}</text>
+          <image class="icon dui" wx:if="{{dui3}}" src="{{images.dui}}"></image>
+          <image class="icon cuo" wx:if="{{cuo3}}" src="{{images.cuo}}"></image>
+        </view>
+        <view class="optionb {{option4}} optionb4" bindtap='option4Click' data-text="{{obj[index].d}}" style="pointer-events: {{disable}}">
+          <text>{{obj[index].d}}</text>
+          <image class="icon dui" wx:if="{{dui4}}" src="{{images.dui}}"></image>
+          <image class="icon cuo" wx:if="{{cuo4}}" src="{{images.cuo}}"></image>
+        </view>
+      </view> -->
+    </view>
+  </view>
+</view>
+<audio src="{{audioTrue}}" id="myAudio1"></audio>
+<audio src="{{audioFalse}}" id="myAudio2"></audio>
+<image wx:if="{{idShowGuoguan3}}" class="guan3" src="{{images.guan3}}"></image>
+<tongguan challengeNum="{{challengeNum}}" i="{{tag}}" class="tongguan" />

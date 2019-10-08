@@ -1,0 +1,246 @@
+/* 首页 */
+
+/* 图片公共样式 */
+
+image {
+  vertical-align: top;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 背景 */
+
+.bg-view {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-view image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 头部 */
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 56rpx;
+  width: 605rpx;
+  margin: auto;
+  text-align: center;
+}
+
+.header .long-march {
+  width: 605rpx;
+  height: 231rpx;
+}
+
+.header .line {
+  width: 605rpx;
+  height: 3rpx;
+  margin-top: 20rpx;
+}
+
+.header .zh-text {
+  width: 442rpx;
+  height: 79rpx;
+  margin-top: 10rpx;
+}
+
+/* 视频 */
+
+/* 底部视图 */
+
+.bottom-view {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 562rpx;
+}
+
+.date {
+  position: absolute;
+  left: 50%;
+  top: 274rpx;
+  width: 236rpx;
+  height: 20rpx;
+  margin-left: -119rpx;
+}
+
+.date image {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-view {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 332rpx;
+  width: 637rpx;
+  margin: auto;
+}
+
+.btn-view button {
+  position: absolute;
+  top: 0;
+  width: 309rpx;
+  height: 77rpx;
+  border-radius: 50rpx;
+  background: transparent;
+}
+
+.explain {
+  left: 0;
+}
+
+.start {
+  right: 0;
+}
+
+.explain image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.start image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.change {
+  margin-top: 2rpx;
+  opacity: 0.8;
+}
+
+.bottom-title {
+  position: absolute;
+  left: 50%;
+  top: 468rpx;
+  width: 264rpx;
+  height: 20rpx;
+  margin-left: -132rpx;
+}
+
+.bottom-title .stars {
+  position: absolute;
+  left: 0;
+  top: -969rpx;
+  width: 266rpx;
+  height: 17rpx;
+}
+
+.bottom-title .bottom-text {
+  position: absolute;
+  left: 26rpx;
+  top: -971rpx;
+  width: 212rpx;
+  height: 20rpx;
+}
+
+.my-gifts {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+  width: 300rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.my-gifts image {
+  width: 145rpx;
+  height: 29rpx;
+}
+
+.startover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.startover image {
+  width: 100%;
+  height: 100%;
+}
+
+.lottery {
+  position: absolute;
+  width: 300rpx;
+  height: 60rpx;
+  left: 5%;
+  bottom: 5%;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.lottery-btn {
+  width: 207rpx;
+  height: 29rpx;
+}
+
+.videoStyle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 330rpx;
+  width: 716rpx;
+  height: 396rpx;
+  margin: auto;
+}
+
+.play {
+  width: 64rpx;
+  height: 76rpx;
+  position: absolute;
+  top: 476rpx;
+  left: 50%;
+  margin-left: -28rpx;
+  z-index: 51;
+}
+
+.play>image {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 330rpx;
+  width: 716rpx;
+  height: 396rpx;
+  margin: auto;
+}
+
+.controls>image {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.dangzhu {
+  width: 10rpx;
+  height: 10rpx;
+  position: absolute;
+  left: 50rpx;
+  top: 400rpx;
+  z-index: 50;
+}

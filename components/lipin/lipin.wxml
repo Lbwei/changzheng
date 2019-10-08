@@ -1,0 +1,66 @@
+<!--components/lipin/lipin.wxml-->
+<view class="lipin" wx:if="{{isShowMask}}">
+  <view class="game-explaine">
+    <image bindtap="closeMask" class="close" src="{{images.closeIcon}}"></image>
+    <view class="title">
+      <image src="{{images.title}}"></image>
+    </view>
+    <view class="xian">
+      <image src="{{images.xian}}"></image>
+    </view>
+    <view class='neibu'>
+      <view class="neibukuang" wx:for="{{jiangpin}}" wx:key="index" bindtap="gai" data-index="{{index}}">
+        <view class='mingzi' wx:if="{{jiangpin[index].prize=='一等奖'}}">
+         <view>公益礼品： 小米充移动电源</view>
+        </view>
+        <view class='mingzi' wx:if="{{jiangpin[index].prize=='二等奖'}}">
+          <view>公益礼品：沙头角街道纪念邮票一套</view>
+        </view>
+        <view class='mingzi' wx:if="{{jiangpin[index].prize=='三等奖'}}">
+          <view>公益礼品：电子健康秤</view>
+        </view>
+        <view class='mingzi' wx:if="{{jiangpin[index].prize=='幸运奖'}}">
+          <view>公益礼品：5元手机话费充值</view>
+        </view>
+        <view class='date'>领取时间:2019.07.29-2019.09.29</view>
+
+        <view class='zhuangtai' wx:if="{{jiangpin[index].state==0}}">
+          <view style='color:red'>点击领取</view>
+        </view>
+        <view class='zhuangtai' wx:if="{{jiangpin[index].state==1&&jiangpin[index].prize=='幸运奖'}}">
+          <view style='color:yellow'>已核销</view>
+        </view>
+        <view class='zhuangtai' wx:if="{{jiangpin[index].state==1&&jiangpin[index].prize=='一等奖'}}">
+          <view style='color:yellow' >线下核销</view>
+        </view>
+         <view class='zhuangtai' wx:if="{{jiangpin[index].state==1&&jiangpin[index].prize=='二等奖'}}">
+          <view style='color:yellow'>线下核销</view>
+        </view>
+         <view class='zhuangtai' wx:if="{{jiangpin[index].state==1&&jiangpin[index].prize=='三等奖'}}">
+          <view style='color:yellow'>线下核销</view>
+        </view>
+        <image  src="{{images.kuang}}"></image>
+      </view>
+    </view>
+
+    <view class='toast-box' wx:if='{{hidden}}'>
+      <input class='phone' type='number' maxlength="11" name="phone" value='{{value}}' bindinput="adInputChange">{{value}}</input>
+      <view class='button'>
+        <button bindtap='confirm'>确定</button>
+      </view>
+    </view>
+  
+  <view class='toast-boxb' wx:if='{{duoqilai}}'>
+      
+      <view class='button'>
+        <button bindtap='zoukai'>关闭</button>
+      </view>
+    </view>
+
+</view>
+
+
+
+
+
+</view>

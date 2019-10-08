@@ -1,0 +1,44 @@
+<!--pages/xinxi/xinxi.wxml-->
+<view class='container'>
+  <image class='bg' src='{{images.bg}}'></image>
+  <view class='top'>
+    <image src="{{images.explain}}"></image>
+  </view>
+  <view class='bottom'>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="section_name">
+        <view class="section__name">姓名:</view>
+        <input name="name" placeholder="请输入您的姓名" />
+        <view class='xian'>
+          <image src='{{images.xian}}'></image>
+        </view>
+      </view>
+
+
+      <view class="section_phone">
+        <view class="section__phone">手机:</view>
+        <input name="phone" maxlength='11' type='number' placeholder="请输入您的号码" />
+        <view class='xian'>
+          <image src='{{images.xian}}'></image>
+        </view>
+      </view>
+
+      <view class="section_area">
+        <view class="section__area">地址:</view>
+        <input name="area" type='string' placeholder="请输入您的地址" />
+        <view class='xian'>
+          <image src='{{images.xian}}'></image>
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button formType="submit" class='submit'>
+          <image src='{{images.btn}}'></image>
+        </button>
+      </view>
+    </form>
+
+  </view>
+
+  <commit id="commit"/>
+</view>

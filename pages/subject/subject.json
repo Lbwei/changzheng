@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "tongguan": "../../components/tongguan/tongguan"
+  }
+}

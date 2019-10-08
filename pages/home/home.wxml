@@ -1,0 +1,47 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="bg-view">
+    <image src="{{images.bg}}"></image>
+  </view>
+
+  <view class="header">
+    <image class="long-march" src="{{images.longMarch}}"></image>
+  </view>
+
+  <view wx:if="{{clear}}"><video show-center-play-btn='false' objectFit='cover' id="myVideo" class="videoStyle" src='{{videoSrc}}' style="cursor: pointer"></video></view>
+  <cover-view class="dangzhu" ></cover-view>
+  <!-- 视频-->
+  <view style="display: {{tab_image}};">
+    <view class="controls" id="controls">
+      <!--  视频 封面图片   -->
+      <image src="{{images.cover}}" />
+    </view>
+    <!-- 中间的播放图片标志 -->
+    <view class="play pa" bindtap="videoPlay">
+      <image bindtap="bindplay" data-id="1" src="{{images.play}}" />
+    </view>
+  </view>
+
+
+  <view class="bottom-view">
+
+
+    <view class="btn-view">
+      <button class="explain" hover-class='change' bindtap="showMask">
+        <image src="{{images.explain}}"></image>
+      </button>
+      <button class="start" hover-class='change' bindtap="startNow">
+        <image src="{{images.start}}"></image>
+      </button>
+    </view>
+
+    <view class="my-gifts" bindtap='openMaskd'>
+      <image src="{{images.gifts}}"></image>
+    </view>
+    <view class="lottery" bindtap="toLottery" style="pointer-events: {{disable}}">
+      <image class="lottery-btn" src="{{images.lottery}}"></image>
+    </view>
+    <lipin class="lipin"  bind:parentEvent='showvideo'></lipin>
+  </view>
+</view>
+<mask id="mask" bind:parentEvent='showvideo' />

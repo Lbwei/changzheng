@@ -1,0 +1,13 @@
+<!--pages/passtwo/passtwo.wxml-->
+<view class="container">
+  <image bindtap="bgClick" class="bg-one" src="{{images.bgOne}}"></image>
+  <view class="btn-view" bindtap="jumpClick">
+    <image src="{{images.jump}}"></image>
+  </view>
+  <view class="explain-view">
+    <view animation="{{animationData}}" class="explain" bindtap='btnClick'>
+      <text>点击概述</text>
+    </view>
+    <image class="explain-text" src="{{images.text}}" wx:if="{{isTextShow}}"></image>
+  </view>
+</view>

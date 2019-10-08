@@ -1,0 +1,18 @@
+<!--pages/customspass/customspass.wxml-->
+<view class="container">
+  <view class="bg-view">
+    <image class="bg-img" src="{{images.bg}}"></image>
+  </view>
+  <view bindtap="threeClick" class="chapter-title three" style="pointer-events: {{disabled}}"></view>
+  <view bindtap="twoClick" class="chapter-title two" style="pointer-events: {{disabled}}"></view>
+  <view bindtap="oneClick" class="chapter-title one" style="pointer-events: {{disabled}}"></view>
+  <view class="mask mask-three" wx:if="{{isThirdMaskShow}}">
+    <image class="lock" src="{{images.lock}}"></image>
+  </view>
+  <view class="mask mask-two" wx:if="{{isSecondMaskShow}}">
+    <image class="lock" src="{{images.lock}}"></image>
+  </view>
+  <view class="back-view" bindtap="blackClick">
+    <image src="{{images.back}}"></image>
+  </view>
+</view>

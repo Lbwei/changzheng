@@ -1,0 +1,11 @@
+<!--pages/receive/receive.wxml-->
+<view class="container">
+  <view class="bg-view">
+    <image src="{{images.bg}}"></image>
+  </view>
+  <view class="back {{change}}" bindtap="backClick">
+    <button hover-class="change">
+      <image src="{{images.back}}"></image>
+    </button>
+  </view>
+</view>

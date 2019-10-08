@@ -1,0 +1,30 @@
+/* components/mask/mask.wxss */
+
+view.mask {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hd {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  right: 979rpx;
+  margin-left: -304rpx;
+  width: 607rpx;
+  height: 842rpx;
+}
+
+.close {
+  position: absolute;
+  left: 50%;
+  margin-left: -28rpx;
+  top: 1140rpx;
+  width: 56rpx;
+  height: 56rpx;
+}

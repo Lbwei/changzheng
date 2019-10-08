@@ -1,0 +1,203 @@
+/* components/lipin/lipin.wxss */
+view.lipin {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8)
+}
+
+.game-explaine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+   z-index: 100;
+}
+
+.game-explaine {
+  position: absolute;
+  top: 50%;
+  margin-top:-47%;
+  width: 664rpx;
+  height: 900rpx;
+}
+
+.game-explaine .close {
+  position: absolute;
+  right:0rpx; 
+  top: -100rpx;
+  width: 56rpx;
+  height: 56rpx;
+}
+.title{
+  width: 157rpx;
+  height: 39rpx;
+  position: absolute;
+  top: -86rpx;
+}
+.title>image{
+  width: 100%;
+  height: 100%;
+}
+.xian{
+   width: 664rpx;
+  height: 3rpx; 
+  position: absolute;
+  top: -16rpx;
+}
+.xian>image{
+  width: 100%;
+  height: 100%; 
+}
+.neibukuang{
+  position: relative;
+  width: 662rpx;
+  height: 180rpx;
+  margin: 30rpx 0rpx;
+  color: white;
+  font-size: 28rpx;
+}
+.neibukuang>image{
+  width: 100%;
+  height: 100%; 
+  position:absolute;
+  top: 0rpx;
+}
+.neibu{
+  width: 100%;
+  height: 100%;
+  overflow-y:scroll; 
+  overflow-x: hidden;
+}
+.mingzi{
+  width: 70%;
+  height: 77rpx;
+  position: relative;
+  top: 27rpx;
+  left: 20rpx;
+}
+.date{
+  position: relative;
+  top: 15rpx;
+  left: 20rpx;
+}
+.zhuangtai{
+  position: relative;
+  top: 20rpx;
+  left: 20rpx;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal {
+  width: 580rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+ 
+.title {
+  font-size: 32rpx;
+  color: #0e0e0e;
+  text-align: center;
+  line-height: 105rpx;
+  margin: 0 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #e6e6e6;
+  font-weight: 700;
+}
+ 
+.content {
+  color: #878787;
+  font-size: 28rpx;
+  line-height: 47rpx;
+  white-space: pre-wrap;
+  padding: 30rpx 86rpx 40rpx;
+  text-align: center;
+  letter-spacing: 1rpx;
+}
+ 
+.btns {
+  height: 100rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  font-size: 32rpx;
+  border-top: 1rpx solid #e6e6e6;
+}
+ 
+.cancel {
+  line-height: 100rpx;
+  flex-grow: 1;
+  border-right: 1rpx solid #e6e6e6;
+}
+ 
+.success {
+  line-height: 100rpx;
+  flex-grow: 1;
+  color: #52ce38;
+}
+.toast-box{
+  width: 80%;
+  height: 600rpx;
+  background: url(https://longmarch.innov-more.com/images/lingjiang/xingyunx.png);
+  background-size:cover; 
+  position: absolute;
+  top: 97rpx;
+  border-radius: 30rpx; 
+  left: 5%;
+}
+.toast-box>input{
+  width: 90%;
+  height: 80rpx;
+  position: absolute;
+  top: 250rpx;
+  left: 5%;
+  border-radius: 10rpx;
+  background-color: white;
+}
+.dianhua{
+  font-size: 42rpx;
+  position: absolute;
+  top: 0rpx;
+  width: 100%;
+  text-align: center;
+}
+.button{
+  width: 60%;
+  height: 60rpx;
+  line-height: 60rpx;
+  position: absolute;
+  top: 500rpx;
+  left: 20%;
+}
+.button>button{
+  background-color:black;
+  color: white;
+   border-radius: 60rpx;
+}
+.toast-boxb{
+  width: 80%;
+  height: 600rpx;
+  background: url(https://longmarch.innov-more.com/images/lipin/ling.png);
+  background-size:cover; 
+  position: absolute;
+  top: 97rpx;
+  border-radius: 30rpx; 
+  left: 5%;
+}

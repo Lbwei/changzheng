@@ -1,0 +1,63 @@
+/* pages/passone/passone.wxss */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container .bg-one {
+  width: 100%;
+  height: 100%;
+}
+
+.container .bg-two {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-view {
+  position: absolute;
+  right: 80rpx;
+  bottom: 100rpx;
+  width: 145rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background-color: rgba(126,126,126,.6);
+
+}
+
+.btn-view image {
+  position: absolute;
+  left: 36rpx;
+  top: 16rpx;
+  width: 83rpx;
+  height: 29rpx;
+}
+
+.explain-view {
+  position: absolute;
+  top: 186rpx;
+  left: 140rpx;
+}
+
+.explain {
+  width: 133rpx;
+  height: 49rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 700;
+  line-height: 46rpx;
+  border-radius: 10rpx;
+  background: #FFD45B;
+}
+
+.explain-text {
+  position: absolute;
+  left: 0;
+  top: 58rpx;
+  width: 454rpx;
+  height: 502rpx;
+}

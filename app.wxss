@@ -1,0 +1,10 @@
+/**app.wxss**/
+page {
+  width: 100%;
+  height: 100%;
+}
+
+/* 图片公共样式 */
+image {
+  vertical-align: top;
+}

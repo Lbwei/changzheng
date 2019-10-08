@@ -1,0 +1,115 @@
+/* pages/lottery/lottery.wxss */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+}
+
+.bg image {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.slider {
+  position: absolute;
+  left: 0;
+  top: 140rpx;
+  width: 100%;
+  height: 50rpx;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.turntable-view {
+  position: absolute;
+  top: 50%;
+  margin-top: -369rpx;
+  left: 50%;
+  margin-left: -323.5rpx;
+  
+  width: 647rpx;
+  height: 738rpx;
+}
+
+.circle-view {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 647rpx;
+  height: 647rpx;
+}
+
+.circle-view .circle {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.circle-view .btn {
+  position: absolute;
+  left: 264rpx;
+  top: 209rpx;
+  width: 125rpx;
+  height: 175rpx;
+}
+
+.turntable-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 607rpx;
+  height: 118rpx;
+}
+
+.turntable-bottom image {
+  width: 100%;
+  height: 100%;
+}
+
+.turntable-bottom .bottom-text {
+  position: absolute;
+  left: 186rpx;
+  bottom: 16rpx;
+  color: #fff;
+}
+
+.explain-view {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 604rpx;
+  height: 159rpx;
+  margin-left: -302rpx;
+}
+
+.explain-view  image {
+  width: 100%;
+  height: 100%;
+}
+
+.back-view {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.back-view  image {
+  position: absolute;
+  left: 34rpx;
+  top: 60rpx;
+  width: 21rpx;
+  height: 37rpx;
+}
+

@@ -1,0 +1,69 @@
+/* components/mask/mask.wxss */
+view.lingjiang {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8)
+}
+
+.game-explaine{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+   z-index: 100;
+}
+
+.game-explaine {
+  top: 50%;
+  margin-top: -400rpx;
+  width: 607rpx;
+  height: 734rpx;
+}
+
+.game-explaine image {
+  width: 100%;
+  height: 100%;
+}
+
+.game-explaine .close {
+  position: absolute;
+  left: 50%;
+  margin-left: -28rpx;
+  top: 800rpx;
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.gamebtn{
+  width: 270rpx;
+  height: 71rpx;
+  position: absolute;
+  bottom: 30rpx;
+  left: 50%;
+  margin-left: -135rpx;
+}
+
+.phone{
+  width: 80%;
+  height: 80rpx;
+  border-radius: 20rpx;
+  position: absolute;
+  left: 10%;
+  bottom: 305rpx;
+  background-color: white;
+}
+
+
+.yinxing{
+	width: 270rpx;
+  height: 71rpx;
+	opacity:0;
+  position: absolute;
+  bottom: 30rpx;
+  left: 50%;
+  margin-left: -135rpx;
+}

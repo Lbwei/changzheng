@@ -1,0 +1,40 @@
+<!--components/mask/mask.wxml-->
+<view class="mask" wx:if="{{isShowMask}}">
+    <image class="hd" src="{{images.hd}}"></image>
+    <image bindtap="closeMask" class="close" src="{{images.closeIcon}}"></image>
+  <!-- <view class="game-explaine">
+    <image src="{{images.gameExplain}}"></image>
+    <view class="kuangleft"><image  src="{{images.kuangleft}}"></image></view>
+    <view class="kuangright"><image src="{{images.kuangright}}"></image></view>
+    <view class="kuangzhong"><image  src="{{images.kuangzhong}}"></image></view>
+   
+   
+   
+    <view class="explain-text">
+      <view>
+        <text>1.完成所有关卡，即可参与一次抽奖，分享转发可再次获得抽奖机会；</text>
+      </view>
+      <view>
+        <text>2.用户使用完答题机会，可通过转发好友获得复活机会；</text>
+      </view>
+      <view>
+        <text>3.获得等级奖的用户需填写真实用户信息，便于邮寄礼品；</text>
+      </view>
+      <view>
+        <text>4.参与答题活动可获得精美礼品，数量有限，领完即止；</text>
+      </view>
+       <view>
+        <text>5.活动设置：
+           一等奖：小米移动电源一台
+           二等奖：沙头角纪念版邮票一套
+           三等奖：电子健康秤一台
+           幸运奖：5元电话费充值</text>
+      </view>
+       <view>
+        <text>6.活动声明：
+主办方有权对本活动细则做出适当调整，若有变更以新规定为准,恕不另行通知。
+活动最终解释权归沙头角街道党工委所有。</text>
+      </view>
+    </view>
+  </view> -->
+</view>

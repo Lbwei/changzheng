@@ -1,0 +1,144 @@
+/* pages/xinxi/xinxi.wxss */
+/* pages/xinxi/xinxi.wxss */
+.bg{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container image{
+  width: 100%;
+  height: 100%;
+}
+.top{
+  width: 619rpx;
+  height: 251rpx;
+  position: absolute;
+  top: 150rpx;
+  left: 50%;
+  margin-left: -309.5rpx;
+}
+
+.kuangneirong{
+  width: 573rpx;
+  height: 218rpx;
+  position: absolute;
+  top: 16.5rpx;
+  left: 23rpx;
+}
+.bottom{
+  width: 619rpx;
+  height: 571rpx;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  margin-left: -309.5rpx;
+  bottom: 270rpx;
+  border-radius: 20rpx;
+}
+.zhuyi{
+ width: 573rpx;
+ height: 26rpx;
+ position: absolute;
+ top: 290rpx;
+ left: 23rpx;
+}
+.section_name{
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 100rpx;
+  font-size: 40rpx;
+}
+.section_name>input{
+  width: 70%;
+  position: absolute;
+  right: 0rpx;
+    top: 7rpx;
+}
+.section__name{
+  width: 30%;
+  position: absolute;
+  left: 0rpx;
+  text-align: center;
+
+}
+.section_phone{
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 250rpx;
+  font-size: 40rpx;
+}
+.section_phone>input{
+  width: 70%;
+  position: absolute;
+  right: 0rpx;
+    top: 7rpx;
+}
+.section__phone{
+  width: 30%;
+  position: absolute;
+  left: 0rpx;
+  text-align: center;
+
+}
+.section_area{
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 400rpx;
+  font-size: 40rpx;
+}
+.section_area>input{
+  width: 70%;
+  position: absolute;
+  right: 0rpx;
+    top: 7rpx;
+}
+.section__area{
+  width: 30%;
+  position: absolute;
+  left: 0rpx;
+  text-align: center;
+
+}
+.btn-area{
+  width: 100%;
+  height:75rpx;
+}
+.btn-area image{
+  width: 618rpx;
+  height:75rpx;
+  position: absolute;
+  left: 0rpx;
+}
+.btn-area>button{
+  width: 100%;
+  height: 75rpx;
+  position: absolute;
+  top: 600rpx;
+  border-radius: 75rpx;
+}
+.xian{
+  width: 90%;
+  height: 2rpx;
+  position: absolute;
+  left: 5%;
+  top: 60rpx;
+}
+.xian>image{
+  width: 100%;
+  height: 100%;
+}

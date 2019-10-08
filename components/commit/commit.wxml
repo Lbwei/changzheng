@@ -1,0 +1,9 @@
+<!--components/commit/commit.wxml-->
+<view class="container" wx:if="{{isShowMask}}">
+  <view class="commit-view">
+    <image src="{{commit}}"></image>
+  </view>
+  <view bindtap="closeMask"  class="close">
+    <image src="{{close}}"></image>
+  </view>
+</view>

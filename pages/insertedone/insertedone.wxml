@@ -1,0 +1,7 @@
+<!--pages/insertedone/insertedone.wxml-->
+<view class="container">
+  <image src="{{inserted}}"></image>
+  <view class="btn-view" bindtap="jumpClick">
+    <image src="{{jump}}"></image>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    
+    "pages/xinxi/xinxi",
+    "pages/receive/receive",
+    "pages/startover/startover",
+    "pages/passthree/passthree",
+    "pages/lottery/lottery",
+    "pages/customspass/customspass",
+    "pages/subject/subject",
+    "pages/passone/passone",
+    "pages/insertedtwo/insertedtwo",
+    "pages/passtwo/passtwo",
+    "pages/insertedone/insertedone"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "mask": "/components/mask/mask"
+  },
+  "sitemapLocation": "sitemap.json"
+}

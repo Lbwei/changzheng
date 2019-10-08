@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "commit": "../../components/commit/commit"
+  }
+  
+}

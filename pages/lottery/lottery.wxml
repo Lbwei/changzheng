@@ -1,0 +1,33 @@
+<!--pages/lottery/lottery.wxml-->
+<view class="container">
+  <view class="bg">
+    <image src="{{images.bg}}"></image>
+  </view>
+
+  <view class="slider">
+    <swiper autoplay='{{true}}' interval='3000' duration='2000' circular='true'>
+      <swiper-item wx:for='{{zhong}}' wx:key="i">恭喜 {{item.nickname}} 获得了 {{item.prize}}</swiper-item>
+    </swiper>
+  </view>
+
+  <view class="turntable-view">
+    <view class="circle-view">
+      <image animation="{{animationData}}" class="circle" src="{{images.circle}}"></image>
+      <image class="btn" src="{{images.btn}}" bindtap="start" style="pointer-events: {{disable}}">></image>
+    </view>
+    <view class="turntable-bottom">
+      <image src="{{images.circleBottom}}"></image>
+      <view class="bottom-text">剩余抽奖次数:
+        <text class="counter">{{counters}}次</text>
+      </view>
+    </view>
+  </view>
+  <view class="explain-view">
+    <image src="{{images.explainText}}"></image>
+  </view>
+  <view class="back-view" bindtap="backClick">
+    <image src="{{images.back}}"></image>
+  </view>
+  <lingjiang class="lingjiang" i="{{i}}" record_id="{{record_id}}"></lingjiang>
+  <!--0~11-->
+</view>

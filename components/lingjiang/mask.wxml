@@ -1,0 +1,14 @@
+<!--components/mask/mask.wxml-->
+<view class="lingjiang" wx:if="{{isShowMask}}">
+  <view class="game-explaine">
+    <image src="{{gameExplain}}"></image>
+    <image bindtap="closeMask" class="close" src="{{closeIcon}}"></image>
+
+    <input wx:if="{{cang}}" class='phone' type='number' maxlength="11" name="phone" value='{{value}}' bindinput="adInputChange">{{value}}</input>
+
+    <view class="gamebtn" bindtap='{{tap}}'>
+      <image src="{{gamebtn}}"></image>
+    </view>
+    <button class='yinxing' wx:if="{{yinxing}}" open-type='share'></button>
+  </view>
+</view>
